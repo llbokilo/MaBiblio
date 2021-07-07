@@ -1,0 +1,40 @@
+<h1 class="container bg-primary text-center pt-3 pb-3 rounded">Quelques classiques immanquables !</h1>
+
+<div class="container">
+<!--   <div class="row mt-3 mb-3">
+    <app-afficher-livre class="col-sm-4 text-center pt-4 rounded" *ngfor="let bouquin in listeLivres" 
+    [livreGenre]="bouquin.genre" [livreTitre]="bouquin.titre" [livreAuteur]="bouquin.auteur"
+    [livreAnnee]="bouquin.annee" [livreNumeroISBN]="bouquin.numeroISBN"></app-afficher-livre>
+  </div> -->
+
+  <div class="row mt-3 mb-3">
+    <app-afficher-livre class="col-sm-4 bg-success text-center pt-4 rounded" [livreGenre]="listeLivres[0].genre"
+    [livreTitre]="listeLivres[0].titre" [livreAuteur]="listeLivres[0].auteur"
+    [livreAnnee]="listeLivres[0].annee" [livreNumeroISBN]="listeLivres[0].numeroISBN"></app-afficher-livre>
+
+    <app-afficher-livre class="col-sm-4 bg-secondary text-center pt-4 rounded" [livreGenre]="listeLivres[1].genre"
+    [livreTitre]="listeLivres[1].titre" [livreAuteur]="listeLivres[1].auteur"
+    [livreAnnee]="listeLivres[1].annee" [livreNumeroISBN]="listeLivres[1].numeroISBN"></app-afficher-livre>
+
+    <app-afficher-livre class="col-sm-4 bg-success text-center pt-4 rounded" [livreGenre]="listeLivres[2].genre"
+    [livreTitre]="listeLivres[2].titre" [livreAuteur]="listeLivres[2].auteur"
+    [livreAnnee]="listeLivres[2].annee" [livreNumeroISBN]="listeLivres[2].numeroISBN"></app-afficher-livre>
+
+    <app-afficher-livre class="col-sm-4 bg-secondary text-center pt-4 rounded" [livreGenre]="listeLivres[3].genre"
+    [livreTitre]="listeLivres[3].titre" [livreAuteur]="listeLivres[3].auteur"
+    [livreAnnee]="listeLivres[3].annee" [livreNumeroISBN]="listeLivres[3].numeroISBN"></app-afficher-livre>
+
+    <app-afficher-livre class="col-sm-4 bg-success text-center pt-4 rounded" [livreGenre]="listeLivres[4].genre"
+    [livreTitre]="listeLivres[4].titre" [livreAuteur]="listeLivres[4].auteur"
+    [livreAnnee]="listeLivres[4].annee" [livreNumeroISBN]="listeLivres[4].numeroISBN"></app-afficher-livre>
+
+    <app-afficher-livre class="col-sm-4 bg-secondary text-center pt-4 rounded" [livreGenre]="listeLivres[5].genre"
+    [livreTitre]="listeLivres[5].titre" [livreAuteur]="listeLivres[5].auteur"
+    [livreAnnee]="listeLivres[5].annee" [livreNumeroISBN]="listeLivres[5].numeroISBN"></app-afficher-livre>
+  </div>
+
+</div>
+
+<div class="container bg-dark rounded text-light text-center pt-2 pb-1 mt-3 fs-5">
+  <p>All rights reserved - DeBock Light IT Solutions</p>
+</div>
