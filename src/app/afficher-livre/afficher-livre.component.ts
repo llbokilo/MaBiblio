@@ -12,6 +12,7 @@ export class AfficherLivreComponent implements OnInit {
   @Input()livreAuteur="";
   @Input()livreAnnee=0;
   @Input()livreNumeroISBN=0;
+  @Input() bouquin?:Livre;
 
   constructor() { }
 
